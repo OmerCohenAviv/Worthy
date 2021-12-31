@@ -2,9 +2,15 @@ import React from "react";
 import styles from "../diamond-calculator.module.scss";
 import DiamondSimilar from "./DiamondSimilar";
 
-const DiamondCalculatorResults = ({ results }: any) => {
-    const { price, similarDiamonds } = results;
-    console.log(similarDiamonds);
+type DiamondCalculatorResultsProps = {
+    results: {
+        price: number;
+        similarDiamonds: [];
+    }
+}
+
+const DiamondCalculatorResults = ({results}: DiamondCalculatorResultsProps) => {
+    const {price, similarDiamonds} = results;
     return (
         <div className={styles["diamond-results"]}>
             <h3>{`Your Diamond Worth - ${price}$`} </h3>
@@ -15,7 +21,7 @@ const DiamondCalculatorResults = ({ results }: any) => {
             </h4>
             <div className={styles["similar-diamonds"]}>
                 {similarDiamonds.map((d: any) => (
-                    <DiamondSimilar price={d.diamond.price} image="" />
+                    <DiamondSimilar price={d.diamond.price} key={d.diamond.id}/>
                 ))}
             </div>
         </div>

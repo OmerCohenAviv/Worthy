@@ -19,7 +19,7 @@ export type DiamondCalculatorFormInputs = {
 const DiamondCalculator = () => {
   const { ...methods } = useForm<DiamondCalculatorFormInputs>();
   const [results, setResults] = useState(null);
-  console.log(results);
+
   return (
     <div className={styles["diamond-calculator"]}>
       <DiamondCalculatorHeader />

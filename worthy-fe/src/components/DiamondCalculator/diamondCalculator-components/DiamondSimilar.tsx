@@ -4,7 +4,6 @@ import diamondOne from "../../../assets/diamond-1.jpg";
 
 type DiamondSimilarProps = {
     price: number;
-    image: string;
 };
 
 const DiamondSimilar = ({price}: DiamondSimilarProps) => {
