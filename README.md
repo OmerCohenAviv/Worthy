@@ -18,7 +18,7 @@ assumptions.
   
   2.users knowlege - we assume not all  users  know the "professional terms" of diamonds, an image interface could help him/her select the correct proprties of the diamonds,
   I thought of a dialog that the user clicks if he needs to see a visual resperstion of the proprties, also highlight the items that were selected in the form.
-  this is not implemented to 
+  this is *not* implemented. 
 
 
 
