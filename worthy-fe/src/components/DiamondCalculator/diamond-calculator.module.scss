@@ -1,0 +1,61 @@
+.diamond-calculator {
+  width: 350px;
+  margin: 0 auto;
+
+  &__header {
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    .calculate-btn {
+      margin-top: 32px;
+      padding: 14px;
+      border: none;
+      cursor: pointer;
+      transition: 340ms ease;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #0ce082;
+
+      &:hover {
+        background-color: #00ff8b;
+      }
+
+      &:disabled {
+        cursor: initial;
+        background-color: #00fff7;
+      }
+    }
+  }
+}
+
+.diamond-results {
+
+  .similar-diamonds {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .similar-diamond {
+    margin: 10px 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+
+    img {
+      width: 150px;
+    }
+
+    &:hover {
+      background-color: aqua;
+    }
+  }
+}
